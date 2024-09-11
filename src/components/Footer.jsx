@@ -59,7 +59,7 @@ function Footer(props) {
           </a>
         )}
         {twitter && (
-          <a href={twitter} rel="noopener noreferrer">
+          <a href={twitter}  rel="noopener noreferrer">
             <img src={twitterIcon} alt="Twitter" className="socialIcon" />
           </a>
         )}
