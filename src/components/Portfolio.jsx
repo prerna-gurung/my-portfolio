@@ -3,8 +3,13 @@ import React from "react";
 import image from "../images/web-design.jpg";
 const imageAltText = "web design book, notebook and laptop";
 
-
 const projectList = [
+  {
+    title: "React Bakery website",
+    description:
+      "A React-based bakery website designed to showcase and sell a wide variety of cake products.",
+    url: "https://sweet-crumbs-bakery.vercel.app/",
+  },
   {
     title: "Take Notes with Keeper app",
     description:
@@ -12,22 +17,15 @@ const projectList = [
     url: "https://prerna-gurung.github.io/Keeper-notes-app/",
   },
   {
+    title: "Product Landing page",
+    description: "Witcher 3 PC game products landing page.",
+    url: "https://prerna-gurung.github.io/Game_Landing_page/",
+  },
+    {
     title: "My Portfolio",
     description:
       "My first portfolio website with some of my freeCodeCamp projects.",
     url: "https://prerna-gurung.github.io/Portfolio/",
-  },
-  {
-    title: "Product Landing page",
-    description:
-      "Witcher 3 PC game products landing page.",
-    url: "https://prerna-gurung.github.io/Game_Landing_page/",
-  },
-  {
-    title: "Anonymous Secrects",
-    description:
-      "To Show anonymous secrects of people around you using API integration",
-    url: "https://secrects-project.vercel.app/",
   },
 ];
 
@@ -35,7 +33,9 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
+      <div
+        style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}
+      >
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
